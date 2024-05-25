@@ -28,6 +28,5 @@ public class MapController {
 	public ResponseEntity<CommonDto<?>> save(@RequestBody MapDto dto) {
 		CommonDto<?> response = mapService.save(dto);
 		return new ResponseEntity<CommonDto<?>>(response, HttpStatus.OK);
-
 	}
 }
