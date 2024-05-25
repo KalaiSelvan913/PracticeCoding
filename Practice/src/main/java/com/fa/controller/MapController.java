@@ -22,6 +22,7 @@ public class MapController {
 	public ResponseEntity<CommonDto<?>> save(@RequestBody RoleDto dto) {
 		CommonDto<?> response = mapService.roleSave(dto);
 		return new ResponseEntity<CommonDto<?>>(response, HttpStatus.OK);
+		
 	}
 	
 	@PostMapping(value = "/mapSave")
